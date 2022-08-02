@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <img src="./images/top-image.svg" width="1865px" />
+    <section class="max-container">
+      <div class="container">
+        <h1 class="title">READY TO LAUNCH IN...</h1>
+        <div class="date">
+          <span>Dias</span>
+          <span>Horas</span>
+          <span>Minutos</span>
+          <span>Segundos</span>
+        </div>
+        <div class="hours" id="countdown">
+          <p class="dias" id="days"></p>
+          <p>:</p>
+          <p class="horas" id="hours"></p>
+          <p>:</p>
+          <p class="minutos" id="minutes"></p>
+          <p>:</p>
+          <p class="segundos" id="seconds"></p>
+        </div>
+        <div class="center-btn">
+          <p class="subtitle">Inscreva-se para saber mais sobre o lançamento</p>
+          <button class="btn">Inscreva-se</button>
+        </div>
+      </div>
+      <div>
+        <img class="rocket" src="./images/rocket.svg" alt="" />
+      </div>
+    </section>
+    <div class="modalwrapper">
+      <div class="modal">
+        <form action="#" method="POST">
+          <h2>Inscreva-se para saber mais</h2>
+          <label>Nome e Sobrenome</label><br />
+          <input type="text" placeholder="Digite nome e sobrenome" /><br />
+          <label>Seu e-mail</label><br />
+          <input type="email" placeholder="Digite o seu e-mail" /><br />
+
+          <button class="btn2">Inscreva-se</button>
+        </form>
+      </div>
+    </div>
+
+    <img src="./images/bottom-image.svg" width="1865px" />
+
+    <script src="./script.js"></script>
+  </body>
+</html>

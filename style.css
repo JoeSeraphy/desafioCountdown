@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+}
+
+.max-container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 5.4rem 0rem 0 12.3rem;
+}
+
+.title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 5.4rem;
+  color: var(--purple);
+}
+
+.date {
+  margin-bottom: 0.2rem;
+  margin-left: 2.9rem;
+}
+
+.date span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 2.1rem;
+  padding: 0 8.4rem 0 0;
+}
+
+.hours {
+  display: flex;
+  font-size: 7.2rem;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 10.8rem;
+  margin-bottom: 2rem;
+}
+
+.dias,
+.horas,
+.minutos,
+.segundos {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.center-btn {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 2.1rem;
+  margin-bottom: 1.6rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffff;
+  background: var(--purple);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+}
+.btn:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.rocket {
+  margin: 0rem 6rem 0 0;
+}
