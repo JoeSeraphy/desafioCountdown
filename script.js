@@ -3,7 +3,7 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-const date = "15 Aug 2022";
+const date = "30 Aug 2022";
 
 function countdown() {
   const newDate = new Date(date);
@@ -30,24 +30,19 @@ countdown();
 
 setInterval(countdown, 1000);
 
-function modal() {
-  const openModal = document.querySelector(".btn.btn2");
 
-  openModal.addEventListener("click", open);
+/* modal */
 
-  const modal = document.querySelector("modalwrapper");
+const openModal = document.getElementById("open-modal");
 
-  function open() {
-    modal.classList.add("active");
-  }
+const closeModal = document.getElementById("close-modal");
 
-  function close() {
-    modal.classList.remove("active");
-  }
-  return {
-    open,
-    close,
-  };
-}
+const modalWrapper = document.getElementById("modal-wrapper");
 
-modal();
+openModal.onclick = function () {
+  modalWrapper.classList.add("active");
+};
+
+closeModal.onclick = function () {
+  modalWrapper.classList.remove("active");
+};
