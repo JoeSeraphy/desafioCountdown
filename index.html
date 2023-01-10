@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Countdown</title>
+    <title>Deploy Countdown</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,10 +15,12 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
-    <img src="./imagens/top-image.svg" width="1865px" />
+    <div class="top-bg"><img src="./imagens/top-image.svg" /></div>
     <section class="max-container">
+      <img class="rocket2" src="./imagens/rocket.svg" alt="" />
       <div class="container">
         <h1 class="title">READY TO LAUNCH IN...</h1>
         <div class="date">
@@ -47,7 +49,7 @@
     </section>
     <div class="modalwrapper" id="modal-wrapper">
       <div class="modal">
-        <form action="#" method="POST">
+        <form method="POST">
           <h2>Inscreva-se para saber mais</h2>
           <label>Nome e Sobrenome</label><br />
           <input type="text" placeholder="Digite nome e sobrenome" /><br />
@@ -59,7 +61,7 @@
       </div>
     </div>
 
-    <img src="./imagens/bottom-image.svg" width="1865px" />
+    <div class="bottom-bg"><img src="./imagens/bottom-image.svg" /></div>
 
     <script src="./script.js"></script>
   </body>
